@@ -56,6 +56,8 @@ public class Loginpage extends TestBase
 	 username.sendKeys(usr);
 	 password.sendKeys(pswd);
 	 Login.click();
+	 
+	 System.out.println("user is login successfully");
 	
 	 return new Homepage();
 	 

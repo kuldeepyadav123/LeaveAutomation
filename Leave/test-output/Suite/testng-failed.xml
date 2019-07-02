@@ -3,11 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="leavetestcases.Loginpagetest">
+        <methods>
+          <include name="setup"/>
+          <include name="logintest"/>
+          <include name="teardown"/>
+          <include name="stllogoimagetest"/>
+        </methods>
+      </class> <!-- leavetestcases.Loginpagetest -->
       <class name="leavetestcases.Homepagetest">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="verifyhomepagetitletest"/>
           <include name="clickapplyleavepagetest"/>
+          <include name="verifyusernametest"/>
         </methods>
       </class> <!-- leavetestcases.Homepagetest -->
     </classes>

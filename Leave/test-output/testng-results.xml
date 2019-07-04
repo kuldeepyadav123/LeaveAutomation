@@ -1,329 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="2" ignored="0" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="42813" started-at="2019-07-02T06:48:38Z" finished-at="2019-07-02T06:49:21Z">
+  <suite name="Suite" duration-ms="56613" started-at="2019-07-02T10:27:02Z" finished-at="2019-07-02T10:27:59Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="42813" started-at="2019-07-02T06:48:38Z" finished-at="2019-07-02T06:49:21Z">
+    <test name="Test" duration-ms="56613" started-at="2019-07-02T10:27:02Z" finished-at="2019-07-02T10:27:59Z">
       <class name="leavetestcases.Loginpagetest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="setup" is-config="true" duration-ms="5216" started-at="2019-07-02T06:48:54Z" finished-at="2019-07-02T06:49:00Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="setup" is-config="true" duration-ms="4540" started-at="2019-07-02T10:27:38Z" finished-at="2019-07-02T10:27:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginpagetitletest()[pri:1, instance:leavetestcases.Loginpagetest@371a67ec]" name="loginpagetitletest" duration-ms="16" started-at="2019-07-02T06:49:00Z" finished-at="2019-07-02T06:49:00Z">
+        <test-method status="PASS" signature="loginpagetitletest()[pri:1, instance:leavetestcases.Loginpagetest@371a67ec]" name="loginpagetitletest" duration-ms="30" started-at="2019-07-02T10:27:43Z" finished-at="2019-07-02T10:27:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpagetitletest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="teardown" is-config="true" duration-ms="959" started-at="2019-07-02T06:49:00Z" finished-at="2019-07-02T06:49:01Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="teardown" is-config="true" duration-ms="809" started-at="2019-07-02T10:27:43Z" finished-at="2019-07-02T10:27:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="setup" is-config="true" duration-ms="5074" started-at="2019-07-02T06:49:01Z" finished-at="2019-07-02T06:49:06Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="setup" is-config="true" duration-ms="4775" started-at="2019-07-02T10:27:44Z" finished-at="2019-07-02T10:27:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="stllogoimagetest()[pri:2, instance:leavetestcases.Loginpagetest@371a67ec]" name="stllogoimagetest" duration-ms="5109" started-at="2019-07-02T06:49:06Z" finished-at="2019-07-02T06:49:11Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy7.isDisplayed(Unknown Source)
-at leavepages.Loginpage.validatelogostl(Loginpage.java:49)
-at leavetestcases.Loginpagetest.stllogoimagetest(Loginpagetest.java:45)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="stllogoimagetest()[pri:2, instance:leavetestcases.Loginpagetest@371a67ec]" name="stllogoimagetest" duration-ms="48" started-at="2019-07-02T10:27:49Z" finished-at="2019-07-02T10:27:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stllogoimagetest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="teardown" is-config="true" duration-ms="788" started-at="2019-07-02T06:49:11Z" finished-at="2019-07-02T06:49:12Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="teardown" is-config="true" duration-ms="797" started-at="2019-07-02T10:27:49Z" finished-at="2019-07-02T10:27:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="setup" is-config="true" duration-ms="5040" started-at="2019-07-02T06:49:12Z" finished-at="2019-07-02T06:49:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="setup" is-config="true" duration-ms="4755" started-at="2019-07-02T10:27:49Z" finished-at="2019-07-02T10:27:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="logintest()[pri:3, instance:leavetestcases.Loginpagetest@371a67ec]" name="logintest" duration-ms="3207" started-at="2019-07-02T06:49:17Z" finished-at="2019-07-02T06:49:20Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-at leavepages.Loginpage.logintest(Loginpage.java:56)
-at leavetestcases.Loginpagetest.logintest(Loginpagetest.java:54)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="logintest()[pri:3, instance:leavetestcases.Loginpagetest@371a67ec]" name="logintest" duration-ms="3679" started-at="2019-07-02T10:27:54Z" finished-at="2019-07-02T10:27:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="teardown" is-config="true" duration-ms="855" started-at="2019-07-02T06:49:20Z" finished-at="2019-07-02T06:49:21Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:leavetestcases.Loginpagetest@371a67ec]" name="teardown" is-config="true" duration-ms="811" started-at="2019-07-02T10:27:58Z" finished-at="2019-07-02T10:27:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- leavetestcases.Loginpagetest -->
       <class name="leavetestcases.Homepagetest">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="setup" is-config="true" duration-ms="16472" started-at="2019-07-02T06:48:38Z" finished-at="2019-07-02T06:48:54Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-at leavepages.Loginpage.logintest(Loginpage.java:56)
-at leavetestcases.Homepagetest.setup(Homepagetest.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="setup" is-config="true" duration-ms="14882" started-at="2019-07-02T10:27:02Z" finished-at="2019-07-02T10:27:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="clickapplyleavepagetest()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="clickapplyleavepagetest" duration-ms="0" started-at="2019-07-02T06:48:54Z" finished-at="2019-07-02T06:48:54Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-at leavepages.Loginpage.logintest(Loginpage.java:56)
-at leavetestcases.Homepagetest.setup(Homepagetest.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="clickapplyleavepagetest()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="clickapplyleavepagetest" duration-ms="2868" started-at="2019-07-02T10:27:17Z" finished-at="2019-07-02T10:27:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickapplyleavepagetest -->
-        <test-method status="SKIP" signature="teardown()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="teardown" is-config="true" duration-ms="0" started-at="2019-07-02T06:48:54Z" finished-at="2019-07-02T06:48:54Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="teardown" is-config="true" duration-ms="1158" started-at="2019-07-02T10:27:20Z" finished-at="2019-07-02T10:27:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-02T06:48:54Z" finished-at="2019-07-02T06:48:54Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="setup" is-config="true" duration-ms="7918" started-at="2019-07-02T10:27:21Z" finished-at="2019-07-02T10:27:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="verifyhomepagetitletest()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="verifyhomepagetitletest" duration-ms="0" started-at="2019-07-02T06:48:54Z" finished-at="2019-07-02T06:48:54Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-at leavepages.Loginpage.logintest(Loginpage.java:56)
-at leavetestcases.Homepagetest.setup(Homepagetest.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="verifyhomepagetitletest()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="verifyhomepagetitletest" duration-ms="23" started-at="2019-07-02T10:27:29Z" finished-at="2019-07-02T10:27:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyhomepagetitletest -->
-        <test-method status="SKIP" signature="teardown()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="teardown" is-config="true" duration-ms="0" started-at="2019-07-02T06:48:54Z" finished-at="2019-07-02T06:48:54Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="teardown" is-config="true" duration-ms="818" started-at="2019-07-02T10:27:29Z" finished-at="2019-07-02T10:27:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="setup" is-config="true" duration-ms="0" started-at="2019-07-02T06:48:54Z" finished-at="2019-07-02T06:48:54Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="setup" is-config="true" duration-ms="7762" started-at="2019-07-02T10:27:30Z" finished-at="2019-07-02T10:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="verifyusernametest()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="verifyusernametest" duration-ms="0" started-at="2019-07-02T06:48:54Z" finished-at="2019-07-02T06:48:54Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
-at leavepages.Loginpage.logintest(Loginpage.java:56)
-at leavetestcases.Homepagetest.setup(Homepagetest.java:35)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="verifyusernametest()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="verifyusernametest" duration-ms="72" started-at="2019-07-02T10:27:38Z" finished-at="2019-07-02T10:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyusernametest -->
-        <test-method status="SKIP" signature="teardown()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="teardown" is-config="true" duration-ms="0" started-at="2019-07-02T06:48:54Z" finished-at="2019-07-02T06:48:54Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:leavetestcases.Homepagetest@262b2c86]" name="teardown" is-config="true" duration-ms="825" started-at="2019-07-02T10:27:38Z" finished-at="2019-07-02T10:27:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

@@ -23,7 +23,7 @@ public TestBase() throws FileNotFoundException
 try
 {
 		prop = new Properties();
-        FileInputStream file = new FileInputStream("C:\\Users\\Kuldeep Yadav\\eclipse-workspace\\Leave\\src\\main\\java\\leaveconfig\\config.properties");
+        FileInputStream file = new FileInputStream("C:\\Users\\Kuldeep Yadav\\git\\LeaveAutomation\\Leave\\src\\main\\java\\leaveconfig\\config.properties");
         prop.load(file);
 	}
 	
@@ -48,13 +48,13 @@ try
 	String browsername = prop.getProperty("browser");
 	if(browsername.equals("chrome"))
 	{
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Kuldeep Yadav\\eclipse-workspace\\Leave\\Driver\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Kuldeep Yadav\\git\\LeaveAutomation\\Leave\\Driver\\chromedriver.exe");
 	driver = new ChromeDriver();
  }
 	
 	else if(browsername.equals("firefox"))
 	{
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Kuldeep Yadav\\eclipse-workspace\\Leave\\Driver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Kuldeep Yadav\\git\\LeaveAutomation\\Leave\\Driver\\geckodriver.exe");
 		driver = new FirefoxDriver();
 	}
 	

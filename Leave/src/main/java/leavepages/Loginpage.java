@@ -3,16 +3,22 @@ package leavepages;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.apache.bcel.generic.ReturnaddressType;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
 import leavebase.TestBase;
+import leaveutility.TestUtil;
 
 public class Loginpage extends TestBase
 {
 
- public Loginpage() throws FileNotFoundException {
+
+public Loginpage() throws FileNotFoundException {
 	PageFactory.initElements(driver, this);	
 
 	}
@@ -43,12 +49,15 @@ public class Loginpage extends TestBase
 	 
  }
  
+ 
+ 
  public boolean validatelogostl()
  {
 	 
   return logostl.isDisplayed();
   
  }
+
  
  public Homepage logintest(String usr, String pswd) throws FileNotFoundException
  
@@ -56,12 +65,11 @@ public class Loginpage extends TestBase
 	 username.sendKeys(usr);
 	 password.sendKeys(pswd);
 	 Login.click();
-	 
-	 System.out.println("user is login successfully");
-	
 	 return new Homepage();
-	 
- }
+	
+}
+ 
+  
 		
  
 

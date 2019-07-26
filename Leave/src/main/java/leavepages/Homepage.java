@@ -19,20 +19,20 @@ public class Homepage extends TestBase
 		
 	}
 	
-	@FindBy (xpath= "//li[contains(text(),'')]")
+	@FindBy (xpath= "//li[contains(text(),'Welcome, Anuj Vats')] ")
 	WebElement usernamelabel;
 	
-	@FindBy (id = "sidebar_main_toggle")
+	@FindBy (xpath = "//*[@id=\"sidebar_main_toggle\"]")
 	WebElement sidebar;
 	
-	@FindBy(xpath = "//*[@id=\"menu_section\"]/ul/li[4]/a/span[2]")
+	@FindBy(xpath="//span[contains(text(),'Leave System')]")
 	WebElement leavemenu;
 	
-	@FindBy (xpath= " //*[@id=\"menu_section\"]/ul/li[4]/ul/li[1]/a")
-	WebElement applyleave;
+	@FindBy (xpath="//a[contains(text(),'Apply Leave')]")
+	WebElement applyleave;  
+	
 	
 
-	
 	
 	
 	 public String  verifyhomepagetitle()
@@ -56,7 +56,7 @@ public class Homepage extends TestBase
 	 
 	 public void clickonleavemenu()
 	 {
-		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		 leavemenu.click();
 		 
 	 }
@@ -64,6 +64,7 @@ public class Homepage extends TestBase
 	 public Applyleavepage  clickonapplyleavepage() throws FileNotFoundException
 	 
 	 {
+		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		 applyleave.click();
 		return new Applyleavepage() ;
 		

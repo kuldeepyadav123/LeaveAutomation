@@ -3,15 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="leavetestcases.Homepagetest">
+      <class name="leavetestcases.Applyleavepagetest">
         <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="verifyhomepagetitletest"/>
-          <include name="clickapplyleavepagetest"/>
-          <include name="verifyusernametest"/>
+          <include name="WriteDescriptionTest"/>
+          <include name="EnterDate"/>
+          <include name="SelectCasualLeave"/>
+          <include name="setup1"/>
+          <include name="ApplyCasualLeave"/>
+          <include name="verifymanangernametest"/>
+          <include name="teardown1"/>
         </methods>
-      </class> <!-- leavetestcases.Homepagetest -->
+      </class> <!-- leavetestcases.Applyleavepagetest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

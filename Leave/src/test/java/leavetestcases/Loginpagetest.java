@@ -69,7 +69,7 @@ public Object[][] getsheetdata()
 
 }
 
-@Test 
+@Test (priority = 3)
 public void logintest() throws FileNotFoundException
 {  
 	loginpage.logintest(prop.getProperty("username"),prop.getProperty("password"));

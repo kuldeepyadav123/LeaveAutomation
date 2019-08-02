@@ -7,8 +7,11 @@ import org.apache.bcel.generic.ReturnaddressType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import leavebase.TestBase;
+import leaveutility.TestUtil;
 
 public class Homepage extends TestBase
 {
@@ -56,6 +59,9 @@ public class Homepage extends TestBase
 	 
 	 public void clickonleavemenu()
 	 {
+		
+		 WebDriverWait wait = new WebDriverWait(driver,30);
+		 wait.until(ExpectedConditions.visibilityOf( leavemenu));
 		 driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		 leavemenu.click();
 		 
@@ -64,7 +70,8 @@ public class Homepage extends TestBase
 	 public Applyleavepage  clickonapplyleavepage() throws FileNotFoundException
 	 
 	 {
-		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		 WebDriverWait wait = new WebDriverWait(driver,30);
+		 wait.until(ExpectedConditions.visibilityOf( applyleave));
 		 applyleave.click();
 		return new Applyleavepage() ;
 		

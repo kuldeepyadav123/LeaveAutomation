@@ -39,7 +39,7 @@ public class Applyleavepagetest extends TestBase {
 		homepage.clickonapplyleavepage();
 }
 	
-	@Test
+	@Test (priority = 1)
 	public boolean EmployeeNameTestonpageApplyLeavePage()
 	{
 		return applyleave.verifyemployeename();
@@ -48,7 +48,7 @@ public class Applyleavepagetest extends TestBase {
 		
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public boolean EmployeedeptNameTestOnApplyLeavePage()
 	{
 	return applyleave.verifyempdpt();
@@ -56,7 +56,7 @@ public class Applyleavepagetest extends TestBase {
 	
 }
 	
-	@Test
+	@Test(priority = 3)
 	
 	public boolean EmpDesgTestOnApplyLeavePage()
 	
@@ -66,7 +66,7 @@ public class Applyleavepagetest extends TestBase {
 		
 	}
 	
-	@Test
+	@Test (priority = 4)
 	public void   SelectCasualLeave()
 	{
 		applyleave.selectleavetypecasual();
@@ -76,7 +76,7 @@ public class Applyleavepagetest extends TestBase {
 		
 	}
 	
-	@Test
+	@Test (priority = 5)
 	
 	public void EnterDate()
 	{   
@@ -87,7 +87,7 @@ public class Applyleavepagetest extends TestBase {
      }
    
 	
-	@Test
+	@Test(priority = 6)
 	public void WriteDescriptionTest()
 	{   
 		applyleave.descriptionfill();
@@ -95,7 +95,7 @@ public class Applyleavepagetest extends TestBase {
        Assert.assertEquals("Test", "Test", "description matched");
 	}
 	
-	@Test
+	@Test (priority = 7)
 	public void verifymanangernametest()
 	
 	
@@ -105,7 +105,7 @@ public class Applyleavepagetest extends TestBase {
 	}
 	
 	
-	@Test
+	@Test (priority = 8)
 	 public void ApplyCasualLeave()
 	 {
 		
@@ -127,7 +127,7 @@ public class Applyleavepagetest extends TestBase {
 	   public void teardown1()
 	   {
 	   	
-	  	driver.quit();
+
 	   }
 	   	
 	
